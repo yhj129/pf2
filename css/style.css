@@ -1,0 +1,136 @@
+/* 구글폰트 */
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+/* 레이아웃 스타일링 */
+section{
+  height: 100vh;
+  /*! height: 700px; */
+}
+.wrap{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  /*! height: 100%; */
+}
+nav a{
+  display: block;
+}
+.block{
+  display: block;
+}
+/* 텍스트 스타일링 */
+.h1{
+ font-size: 66px; 
+}
+.h2{
+ font-size: 54px; 
+}
+.h3{
+ font-size: 35px; 
+}
+.h4{
+ font-size: 25px; 
+}
+.h5{
+ font-size: 20px; 
+}
+.menu{
+ font-size: 18px; 
+}
+.submenu{
+  font-size: 16px;
+}
+.titlep{
+  font-size: 20px;
+}
+.p{
+  font-size: 18px;
+}
+.m{
+  font-size: 16px;
+}
+.sm{
+  font-size: 14px;
+}
+.xs{
+  font-size: 12px;
+}
+/* 칼라 */
+.white, .white a{
+  color: white;
+}
+.gray{
+  color: #aeb0b2;
+}
+.black, .black a{
+  color: black;
+}
+/* 버튼 */
+.btn16{
+  font-size: 14px;
+}
+.roundbtn{
+  
+  width: fit-content;
+  padding: 0 20px;
+  border: 1px solid #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  gap: 20px;
+}
+.roundbtn::after{
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 29px;
+  background-image: url(../img/svg/roundbtn.svg);
+  background-position-x: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hide{
+  display: none !important;
+}
+.more{
+  border: 1px solid #fff;
+  line-height: 1;
+  padding: 11px 20px;
+  color: white;
+  transition: 0.5s;
+}
+.more:hover{
+  background-color: #fff;
+  color: black;
+}
+.more::after{
+  content: "+";
+  margin-left: 10px;
+  transition: 0.5s;
+  position: relative;
+  left: 0px;
+}
+.more:hover::after{
+  left: 10px;
+}

@@ -1,0 +1,28 @@
+.top {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    text-transform: uppercase;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px 20px;
+    color: #fff;
+}
+.top::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-image: url(../img/svg/top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(-90deg);
+}
+.sm {
+    font-size: 14px;
+}

@@ -1,0 +1,39 @@
+#business {
+  background-color: #c0d7bc;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/background/business1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#business .wrap {
+}
+
+#business h2.hide {
+}
+
+#business ul.flex {
+}
+
+#business ul {
+}
+
+#business ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#business ul li h3.h1 {
+}
+
+#business ul li p.p {
+  order: 3;
+}
+
+#business ul li a.menu {
+  order: 2;
+  margin-bottom: 26px;
+}

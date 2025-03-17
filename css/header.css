@@ -1,0 +1,39 @@
+/* ===== 헤더 영역 ===== */
+header {position: absolute;width: 100%;z-index: 2;border-bottom: 1px solid #858585;}
+header div{height: 70px;}
+header div nav {height: 100%;align-items: center;}
+
+header div nav .gnb {height: 100%;}
+header div nav .gnb h1{}
+header div nav .gnb h1 a{}
+header div nav .gnb ul {display: none;}
+header div nav .gnb li {}
+header div nav .gnb li a {padding: 0 40px;height: calc(100% - 2px);display: flex;align-items: center;transition: 0.5s;border-bottom: 5px solid transparent;}
+header div nav .gnb li:hover a {
+  
+  color: #000;
+  border-bottom: 5px solid;
+}
+header div nav .gnb ul li ul {}
+header div nav .gnb ul li ul li{}
+header div nav .gnb ul li ul li a{}
+
+header div nav .etc {}
+header div nav .etc ul {}
+header div nav .etc li {position: relative;}
+header div nav .etc li a {padding: 0 20px;color: #dedada;transition: 0.3s;}
+header div nav .etc li:nth-child(2) a::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.5px;
+  top: calc(50% - 1.5px);
+}
+header div nav .etc li a:hover {
+  
+  color: #fff;
+}

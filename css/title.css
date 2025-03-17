@@ -1,0 +1,70 @@
+/* ===== 타이틀 영역 ===== */
+#title { 
+  background-color: #999;
+  height: 100%;display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+#title::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 380px;
+  /*! background-image: url(../img/svg/wave.svg); */
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+#title .wrap {display: grid;grid-template-columns: auto auto;grid-template-rows: 1fr 1fr;position: relative;z-index: 1;}
+#title h2.h1 {grid-column: 1;grid-row: 1;align-self: end;}
+#title p.titlep {grid-column: 1;grid-row: 2;}
+#title nav {grid-column: 2;grid-row: 1 / span 2;}
+#title nav ul {}
+#title nav ul li {width: 150px;height: 150px;border: 1px solid #000;}
+#title nav ul li a {display: block;height: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 2px;}
+#title nav ul li a::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(-8px);
+}
+#title nav ul li:nth-child(1) a::before {
+  background-image: url(../img/svg/icon1.svg);
+}
+#title nav ul li:nth-child(2) a::before {
+  background-image: url(../img/svg/icon2.svg);
+}
+#title nav ul li:nth-child(3) a::before {
+  background-image: url(../img/svg/icon3.svg);
+}
+#title nav ul li:nth-child(4) a::before {
+  background-image: url(../img/svg/icon4.svg);
+}
+#title nav ul li a::after {
+  content: "";
+  display: block;
+  background-image: url(../img/quick_arrow1.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#title nav ul li a h2.menu {}
+#title nav ul li a p.sm {
+  
+  display: none;
+}
+div>video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

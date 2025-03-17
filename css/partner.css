@@ -1,0 +1,36 @@
+#partner {
+  
+  background-color: #f4eebe;
+  background-image: linear-gradient(-25deg, rgba(255,255,255,0) 94.9%, #f88 95%, #f88 100%), url(../img//festival.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: colorslide;
+  animation-duration: 1s;
+}
+@keyframes colorslide {
+  from{
+    background-position-left: 0%, center;
+  }
+  to{
+    background-position-left: 100%, center;  
+  }
+}
+#partner .wrap {
+  
+  height: 100%;
+  justify-content: center;
+  gap: 40px;
+}
+#partner .wrap h2 {
+  
+}
+#partner .wrap h3 {
+  
+}
+#partner .wrap p {
+  
+}
+#partner .wrap a {
+  
+}
